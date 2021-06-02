@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title> Dom </title>
+    </head>
+    <body>
+        <div class = "app">
+            <input type="text" class="n" name="nome">
+            <button onClick="adicionar()">Adicionar</button>
+           
+        </div> 
+        
+
+        <script>
+
+                var containerElement = document.querySelector('.app');
+                var btn = document.querySelector('.botao');
+                var inp = document.querySelector('.n');
+
+                var nomes = ["Diego", "Gabriel", "Lucas"];
+                var listElement = document.createElement('ul');
+
+                for (var value of nomes){
+                    var itemElement = document.createElement('li');
+                    itemElement.appendChild(document.createTextNode(value));
+                    listElement.appendChild(itemElement);
+                    containerElement.appendChild(listElement);
+                   
+                }
+            
+             function adicionar(){
+                var Element = document.createElement('li');
+                Element.innerHTML = inp.value;
+                listElement.appendChild(Element);
+                containerElement.appendChild(listElement);
+                inp.value = "";
+            }
+               
+                    
+                
+            
+
+            
+                
+
+           
+               
+        </script>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title> Dom </title>
+    </head>
+    <body>
+        <div class = "app">
+            <button class="botaoo"> Adicionar</button>
+        </div>
+
+        <script>
+           var bod = document.querySelector('body');
+           var btn = document.querySelector('button');
+            
+            btn.style.padding = 10;
+           
+           btn.onclick = function(){  
+            var quadrado = document.createElement('div');
+            quadrado.style.width=100;
+            quadrado.style.height = 100;
+            quadrado.style.backgroundColor = 'red';
+
+            var esp = document.createElement('div');
+            esp.style.padding = 20;
+
+            bod.appendChild(quadrado);
+            bod.appendChild(esp);
+           }
+               
+        </script>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title> Dom </title>
+    </head>
+    <body>
+        <div class = "app">
+           
+        </div> 
+        
+
+        <script>
+
+                var containerElement = document.querySelector('.app');
+        
+                var nomes = ["Diego", "Gabriel", "Lucas"];
+                var listElement = document.createElement('ul');
+
+                for (var value of nomes){
+                    var itemElement = document.createElement('li');
+                    itemElement.appendChild(document.createTextNode(value));
+                    listElement.appendChild(itemElement);
+                    containerElement.appendChild(listElement);
+                    console.log(listElement)
+                   
+                }
+               
+                    
+                
+            
+
+            
+                
+
+           
+               
+        </script>
+    </body>
+</html>
